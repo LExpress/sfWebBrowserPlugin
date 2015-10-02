@@ -188,7 +188,8 @@ class sfCurlAdapter
           if (is_array($value)) {
             continue;
           }
-          if (is_file($value))
+          /** @link https://svn.php.net/viewvc/?view=revision&amp;revision=305507 */
+          if (false === strpos($value, "\0") && is_file($value))
           {
             $has_files = true;
             $parameters[$name] = '@'.realpath($value);
