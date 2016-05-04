@@ -200,12 +200,17 @@ Changelog
 
 ### Trunk
 
-### 2011-12-XX | 1.2 Beta
+### 2016-05-04 | 1.2.0 Stable
 
   * jeromemacias: Do not save into stack by default (fixed memory leak)
   * jeromemacias: Removed interaction with response (click and setField methods)
   * COil: Added the CURL error number in the returned exception
   * GromNaN: Inject sf_web_browser as a service (require symfony1 fork with service container)
+  * GromNaN: Composer compatible
+  * jeromemacias: Added followRedirect property (default: true), now possible to turn it off
+  * CaptainJojo: Update sfCurlAdapter for init postfields
+  * IllyaSvergun: PHP 5.5 compatibility
+  * siimsoni: sfCurlAdapter binary compatibility
 
 ### 2009-05-12 | 1.1.2 Stable
 
